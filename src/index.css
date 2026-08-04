@@ -1,0 +1,290 @@
+/* Estilos globales y reseteo */
+/* Estilos globales y reseteo */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #4a4a4a;
+  
+  /* Reemplazamos el fondo plano por un degradado pastel cálido y envolvente */
+  background: linear-gradient(180deg, #fbf9f4 0%, #fff5ee 100%);
+  background-attachment: fixed; /* Hace que el fondo se quede quieto y suave al hacer scroll */
+  min-height: 100vh;
+}
+/* Encabezado Principal con espacio flexible y fondo corregido */
+.header-prisma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px; /* Achicamos un pelín el relleno para que no se estile de más */
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e2dcd0;
+  
+  /* Ajustamos el fondo para que cubra todo y se centre perfectamente */
+  background-image: url('./assets/bambu-bg.jpeg');
+  background-size: cover;
+  background-position: center center; /* ¡NUEVO! Centrado absoluto en ambos ejes */
+}
+
+
+/* Capa pastel de fondo (¡Ahora sí se queda atrás!) */
+.header-prisma::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 240, 245, 0.85) 0%, rgba(230, 242, 255, 0.85) 100%);
+  z-index: 1; /* Nivel 1: Fondo */
+}
+/* Quitamos la caja blanca y dejamos el logo libre sobre el fondo */
+.logo-contenedor {
+  position: relative;
+  z-index: 10;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; /* ¡NUEVO! Fondo transparente */
+  padding: 0; /* Quitamos el relleno */
+  margin-bottom: 20px;
+  box-shadow: none; /* Quitamos la sombra de la caja vieja */
+  border: none; /* Quitamos el borde */
+}
+
+/* Imagen del logo con tamaño maximizado para pantallas grandes */
+.logo-img {
+  width: 420px; /* ¡Aumentado de 290px a 420px! */
+  height: auto;
+  display: block;
+  
+  /* Aumentamos un poquito el radio de la sombra para acompañar el nuevo tamaño */
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.22)); 
+}
+
+
+/* Forzamos a que los textos también queden al frente y legibles */
+.titulo-prisma, .subtitulo-prisma {
+  position: relative;
+  z-index: 10;
+}
+
+
+.titulo-prisma {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.destaque-naranja {
+  color: #ff9273; /* El "3D" en naranja pastel */
+}
+
+.subtitulo-prisma {
+  margin: 6px 0 0 0;
+  color: #8c8275;
+  font-size: 15px;
+}
+
+/* Sección de Contenido */
+.titulo-seccion {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.grilla-productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px;
+}
+/* Estructura para dividir la pantalla en dos columnas */
+.contenedor-layout {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Diseño de la barra lateral */
+.sidebar-categorias {
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(140, 130, 117, 0.05);
+  border: 1px solid #eae5db;
+  height: fit-content; /* Se ajusta al tamaño de la lista */
+}
+
+.titulo-sidebar {
+  margin: 0 0 15px 0;
+  font-size: 18px;
+  color: #4a4a4a;
+  border-bottom: 2px solid #fff5f2;
+  padding-bottom: 8px;
+}
+
+.lista-sidebar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Botones de las categorías */
+.btn-categoria {
+  width: 100%;
+  text-align: left;
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #6a6055;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Efecto al pasar el mouse por encima */
+.btn-categoria:hover {
+  background-color: #f0f7ff; /* Celeste pastel muy claro */
+  color: #4a4a4a;
+  padding-left: 18px; /* Pequeño efecto de empuje */
+}
+
+/* Estilo para la categoría seleccionada actualmente */
+.btn-categoria.activo {
+  background-color: #fff5f2; /* Naranja pastel ultra claro */
+  color: #ff9273; /* Letras naranjas */
+  font-weight: 600;
+}
+
+/* Ajuste para el contenedor de las tarjetas a la derecha */
+.contenido-productos {
+  flex: 1; /* Ocupa todo el espacio restante de la pantalla */
+}
+
+.sin-productos {
+  color: #8c8275;
+  font-style: italic;
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+   MÓVIL EN PRIMER LUGAR: Reglas exclusivas para pantallas chicas (Celulares)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Cambiamos la distribución de lado a lado a una sola columna vertical */
+  .contenedor-layout {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  /* La barra lateral ahora se estira a lo ancho arriba de los productos */
+  .sidebar-categorias {
+    width: auto;
+    padding: 15px;
+  }
+
+  .titulo-sidebar {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  /* Convertimos la lista vertical en una fila horizontal con scroll táctil */
+  .lista-sidebar {
+    flex-direction: row;
+    overflow-x: auto; /* Permite deslizar con el dedo de izquierda a derecha */
+    white-space: nowrap;
+    padding-bottom: 8px;
+    gap: 6px;
+    
+    /* Oculta la barra de scroll tosca de Windows en celulares para que se vea limpio */
+    -webkit-overflow-scrolling: touch;
+  }
+  .lista-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Ajustamos los botones de categorías para el formato horizontal */
+  .btn-categoria {
+    width: auto;
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 13px;
+    background-color: #f7f5f0; /* Un fondo sutil para que parezcan pastillas/tags */
+  }
+
+  .btn-categoria:hover {
+    padding-left: 14px; /* Desactivamos el efecto de empuje lateral en celular */
+    background-color: #f0f7ff;
+  }
+
+  /* Aseguramos que la grilla de productos ocupe todo el ancho disponible */
+  .contenido-productos {
+    width: 100%;
+  }
+
+  /* Forzamos a que las tarjetas se adapten de forma amigable al ancho del celular */
+  .grilla-productos {
+    padding: 0;
+  }
+}
+/* Contenedor de la barra corrediza con efecto de luz metalizada */
+.barra-corrediza {
+  width: 100%;
+  background-color: #5880b5; /* Mantiene tu fondo naranja pastel */
+  overflow: hidden;
+  padding: 10px 0;
+  display: flex;
+  position: relative;
+
+  /* 1. Bordes superior e inferior con un tono dorado/metalizado suave */
+  border-top: 2px solid #5d58e5; 
+  border-bottom: 2px solid #5858e5;
+
+  /* 2. El truco de la luz: sombras que crean un destello/reflejo sutil hacia adentro y afuera */
+  box-shadow: 
+    inset 0 4px 10px rgba(255, 255, 255, 0.4),  /* Reflejo de luz blanca interna arriba */
+    inset 0 -4px 10px rgba(0, 0, 0, 0.1),       /* Sombra interna abajo para dar volumen */
+    0 4px 12px rgba(229, 193, 88, 0.2);         /* Destello dorado suave hacia el cuerpo de la página */
+}
+
+/* Contenedor interno que se va a desplazar */
+.texto-movimiento {
+  display: flex;
+  gap: 50px; /* Espacio entre cada frase */
+  padding-left: 100%; /* Arranca la animación fuera de la pantalla a la derecha */
+  animation: correrTexto 25s linear infinite; /* Movimiento continuo e infinito */
+}
+
+/* Estilo para cada frase individual */
+.texto-movimiento span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff; /* Letras naranja pastel a juego con la marca */
+  letter-spacing: 0.5px;
+  white-space: nowrap; /* Evita que el texto se rompa en dos renglones */
+}
+
+/* Animación mágica de CSS para desplazar el texto */
+@keyframes correrTexto {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    /* Se desplaza hacia la izquierda de forma exacta */
+    transform: translate3d(-100%, 0, 0); 
+  }
+}
