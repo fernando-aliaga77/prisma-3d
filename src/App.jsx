@@ -46,6 +46,16 @@ import arcanoLuna from './assets/arcano-la-luna.png'
 import macetitaLibro from './assets/macetita-libro.jpeg'
 import arcanoElColgado from './assets/arcano-el-colgado.jpeg'
 import patricioLlavero from './assets/patricio-llavero.png'
+import jackElPerro from './assets/jack-el-perro.png'
+import jackElPerroMesa from './assets/jack-el-perro-mesa.png'
+import jackElPerroPrimerPlano from './assets/jack-el-perro-primerplano.jpeg'
+import jackElPerroLateral from './assets/jack-el-perro-lateral.png'
+import jackElPerroAbajo from './assets/jack-el-perro-abajo.jpeg'
+import angryBirdsCajon from './assets/angry-birds-red-cajon.jpeg'
+import angryBirdsFrente from './assets/angry-birds-red-frente.jpeg'
+import angryBirdsCerca from './assets/angry-birds-red-cerca.jpeg'
+
+
 
 function App() {
   // 1. Estado para saber qué categoría seleccionó el usuario (empieza en "Todos")
@@ -375,7 +385,7 @@ function App() {
       precio: "14000",
       descripcion: "figura de Angry Birds 9 cm",
       categoria: "Figuras 3d",
-      imagenes: [ angryBirdsIa, angryBirdsTaller  ]
+      imagenes: [ angryBirdsIa, angryBirdsTaller, angryBirdsCajon, angryBirdsCerca, angryBirdsFrente  ]
 
     },
       {
@@ -440,11 +450,21 @@ function App() {
       categoria: "Llaveros",
       imagen: [ patricioLlavero ]
 
+    },
+          {
+      id: 43,
+      nombre: "Jake el Perro",
+      precio: "12000",
+      descripcion: "Muñeco de Jake el Perro del progrma Hora de aventura de 13 cm de altura",
+      categoria: "Figuras 3d",
+      imagenes: [ jackElPerro, jackElPerroLateral, jackElPerroMesa, jackElPerroPrimerPlano, jackElPerroAbajo ]
+
     }
 
 
-  ]
 
+  ]
+ 
   // 4. Filtrar los productos según la categoría que toque el usuario
   const productosFiltrados = categoriaActiva === 'Todos'
     ? misProductos
