@@ -444,7 +444,7 @@ function App() {
     },
           {
       id: 42,
-      nombre: "Llavero Paticio",
+      nombre: "Llavero Patricio",
       precio: "1800",
       descripcion: "Divertido llavero de Patricio",
       categoria: "Llaveros",
