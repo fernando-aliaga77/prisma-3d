@@ -311,7 +311,7 @@ function App() {
       id: 27,
       nombre: "Lagartija Tom de Hoppers",
       precio: "4800",
-      descripcion: "Figura de 9 cm de altura de la sipática lagartija de Hopers",
+      descripcion: "Figura de 9 cm de altura de la simpática lagartija de Hopers",
       categoria: "Figuras 3d",
       imagenes: [ lagartijaTom, lagartijaTomEscritorio]
 
@@ -410,7 +410,7 @@ function App() {
       id: 38,
       nombre: "Arcano mayor Sol",
       precio: "10000",
-      descripcion: "Figura de Arcao mayor de 12 cm",
+      descripcion: "Figura de Arcano mayor de 12 cm",
       categoria: "Arcanos",
       imagen: [ arcanoSol ]
 
@@ -428,7 +428,7 @@ function App() {
       id: 40,
       nombre: "Macetita Lectura",
       precio: "3800",
-      descripcion: "Macetita y porta objetos para esritorio y/o decoracion",
+      descripcion: "Macetita y porta objetos para esritorio y/o decoración",
       categoria: "Articulos de bazar",
       imagen: [ macetitaLibro ]
 
