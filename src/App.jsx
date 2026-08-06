@@ -54,6 +54,13 @@ import jackElPerroAbajo from './assets/jack-el-perro-abajo.jpeg'
 import angryBirdsCajon from './assets/angry-birds-red-cajon.jpeg'
 import angryBirdsFrente from './assets/angry-birds-red-frente.jpeg'
 import angryBirdsCerca from './assets/angry-birds-red-cerca.jpeg'
+import formasGeometricasDoble from './assets/formas-geometricas-doble-encastre.png'
+import arcangelMiguelIa from './assets/arcangel-miguel-ia.png'
+import arcangelMiguel from './assets/arcangel-miguel.jpeg'
+import arcangelMiguelTrasera from './assets/arcangel-miguel-trasera.jpeg'
+import arcangelMiguelFrente from './assets/arcangel-miguel-frente.jpeg'
+import rompeCabezasStegosaurus from './assets/rompe-cabezas-stegosaurus.jpeg'
+import setRompecabezasDinos from './assets/set-rompecabezas-dinos.png'
 
 
 
@@ -372,9 +379,9 @@ function App() {
     },
       {
       id: 34,
-      nombre: "Figura de Airon Man",
+      nombre: "Figura de Iron Man",
       precio: "16000",
-      descripcion: "Figura de accion monocromatica Airon Man de 15 cm",
+      descripcion: "Figura de accion monocromatica Iron Man de 15 cm",
       categoria: "Figuras 3d",
       imagenes: [ ironManIa, ironManTaller ]
 
@@ -435,7 +442,7 @@ function App() {
     },
           {
       id: 41,
-      nombre: "Arcao El Colgado",
+      nombre: "Arcano El Colgado",
       precio: "10000",
       descripcion: "Figura d arcano mayor 12 cm",
       categoria: "Arcanos",
@@ -459,9 +466,43 @@ function App() {
       categoria: "Figuras 3d",
       imagenes: [ jackElPerro, jackElPerroLateral, jackElPerroMesa, jackElPerroPrimerPlano, jackElPerroAbajo ]
 
+    },
+        {
+      id: 44,
+      nombre: "Arcágel Miguel",
+      precio: "8500",
+      descripcion: "Figura del arcángel Miguel d 11.5 cm de altura",
+      categoria: "Figuras 3d",
+      imagenes: [ arcangelMiguelIa, arcangelMiguelFrente, arcangelMiguel, arcangelMiguelTrasera ]
+
+    },
+         {
+      id: 45,
+      nombre: "Figuras geométricas doble encastre",
+      precio: "12000",
+      descripcion: "Set de fiuras geométricas con doble encastre y base",
+      categoria: "Juegos educativos",
+      imagenes: [ formasGeometricasDoble ]
+
+    },
+       {
+      id: 46,
+      nombre: "Rompecabezas de Stegosaurus",
+      precio: "4200",
+      descripcion: "Rompecabezas de dinosaurio con base para encastre",
+      categoria: "Juegos didacticos",
+      imagenes: [ rompeCabezasStegosaurus ]
+
+    },
+      {
+      id: 47,
+      nombre: "Set de rompecabezas de Dinos",
+      precio: "18000",
+      descripcion: "Cinco rompecabezas de dinosaurios con base para encastre",
+      categoria: "Juegos didacticos",
+      imagenes: [ setRompecabezasDinos ]
+
     }
-
-
 
   ]
  
