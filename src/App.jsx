@@ -373,7 +373,7 @@ function App() {
       nombre: "Cuerpos geometricos para encastrar",
       precio: "16000",
       descripcion: "Juego de encastre ideal para el aprendizaje matemático y la motricidad fina",
-      categoria: "Juegos educatvos",
+      categoria: "Juegos educativos",
       imagen: [ figurasGeometricas ]
 
     },
