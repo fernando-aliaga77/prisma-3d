@@ -61,6 +61,9 @@ import arcangelMiguelTrasera from './assets/arcangel-miguel-trasera.jpeg'
 import arcangelMiguelFrente from './assets/arcangel-miguel-frente.jpeg'
 import rompeCabezasStegosaurus from './assets/rompe-cabezas-stegosaurus.jpeg'
 import setRompecabezasDinos from './assets/set-rompecabezas-dinos.png'
+import fraccionesBase from './assets/fracciones.png'
+import fraccionesDesarmado from './assets/fracciones-desarmado.jpeg'
+import taTeTi from './assets/ta-te-ti.jpeg'
 
 
 
@@ -501,6 +504,24 @@ function App() {
       descripcion: "Cinco rompecabezas de dinosaurios con base para encastre",
       categoria: "Juegos didacticos",
       imagenes: [ setRompecabezasDinos ]
+
+    },
+    {
+      id: 48,
+      nombre: "Juego de fracciones",
+      precio: "10000",
+      descripcion: "Base de 14,6 x 22 cm con fracciones 1 , 1/2 , 1/3 , 1/4, 1/5, 1/6",
+      categoria: "Juegos educativos",
+      imagenes: [ fraccionesBase, fraccionesDesarmado ]
+
+    },
+    {
+      id: 49,
+      nombre: "Ta-Te-TI",
+      precio: "3500",
+      descripcion: "Tradicional juego de Ta Te Ti",
+      categoria: "Juegos didacticos",
+      imagenes: [ taTeTi ]
 
     }
 
