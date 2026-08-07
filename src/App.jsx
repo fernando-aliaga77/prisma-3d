@@ -64,6 +64,9 @@ import setRompecabezasDinos from './assets/set-rompecabezas-dinos.png'
 import fraccionesBase from './assets/fracciones.png'
 import fraccionesDesarmado from './assets/fracciones-desarmado.jpeg'
 import taTeTi from './assets/ta-te-ti.jpeg'
+import rompecabezasMatematico from './assets/rompecabezas-matematico.jpeg'
+import rompecbezasMatematicoBase from './assets/rompecabezas-matematico-base.jpeg'
+import rompecabezasMtematicoPiezas from './assets/rompecabezas-matematico-piezas.jpeg'
 
 
 
@@ -522,6 +525,15 @@ function App() {
       descripcion: "Tradicional juego de Ta Te Ti",
       categoria: "Juegos didacticos",
       imagenes: [ taTeTi ]
+
+    },
+    {
+      id: 50,
+      nombre: "Rompecabezas Matemático",
+      precio: "15000",
+      descripcion: "Base de 14,5 x 14,5 cm con 20 piezas con los numeros del 1 al 10 para armar convinaciones y aprender a sumar",
+      categoria: "Juegos educativos",
+      imagenes: [ rompecabezasMatematico, rompecabezasMtematicoPiezas, rompecbezasMatematicoBase]
 
     }
 
