@@ -118,7 +118,7 @@ function App() {
       id: 4,
       nombre: "Alien porta incienso",
       precio: "12000",
-      descripcion: "Divertido Porta incienzo alien fumando ",
+      descripcion: "Divertido Porta incienso alien fumando ",
       categoria: "Articulos de bazar",
       imagen: [ portaIncienzoAlien ]
     }, 
@@ -340,7 +340,7 @@ function App() {
     },
       {
       id: 29,
-      nombre: "Organizador de cosmeticos con cajón",
+      nombre: "Organizador de cosméticos con cajón",
       precio: "28600",
       descripcion: "Organizador de 1 cm de alto y 20cmx15cm de base ",
       categoria: "Articulos de bazar",
@@ -376,7 +376,7 @@ function App() {
     },
       {
       id: 33,
-      nombre: "Cuerpos geometricos para encastrar",
+      nombre: "Cuerpos geométricos para encastrar",
       precio: "16000",
       descripcion: "Juego de encastre ideal para el aprendizaje matemático y la motricidad fina",
       categoria: "Juegos educativos",
