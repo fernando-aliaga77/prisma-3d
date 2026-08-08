@@ -531,7 +531,7 @@ function App() {
       id: 50,
       nombre: "Rompecabezas Matemático",
       precio: "15000",
-      descripcion: "Base de 14,5 x 14,5 cm con 20 piezas con los numeros del 1 al 10 para armar convinaciones y aprender a sumar",
+      descripcion: "Base de 14,5 x 14,5 cm con 20 piezas con los numeros del 1 al 10 para armar combinaciones y aprender a sumar",
       categoria: "Juegos educativos",
       imagenes: [ rompecabezasMatematico, rompecabezasMtematicoPiezas, rompecbezasMatematicoBase]
 
