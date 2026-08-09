@@ -260,7 +260,7 @@ function App() {
       {
       id: 20,
       nombre: "Agitadores para vasos personalizados x 100",
-      precio: "16000",
+      precio: "22000",
       descripcion: "Agitadoes 18cm de largo x 35 mm espesor",
       categoria: "Perzonalizacion de fiestas y eventos",
       imagen: [ agitadorePersonalizado ]
