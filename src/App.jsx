@@ -476,7 +476,7 @@ function App() {
         {
       id: 44,
       nombre: "Arcágel Miguel",
-      precio: "8500",
+      precio: "15000",
       descripcion: "Figura del arcángel Miguel d 11.5 cm de altura",
       categoria: "Figuras 3d",
       imagenes: [ arcangelMiguelIa, arcangelMiguelFrente, arcangelMiguel, arcangelMiguelTrasera ]
