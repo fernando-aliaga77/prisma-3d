@@ -67,6 +67,9 @@ import taTeTi from './assets/ta-te-ti.jpeg'
 import rompecabezasMatematico from './assets/rompecabezas-matematico.jpeg'
 import rompecbezasMatematicoBase from './assets/rompecabezas-matematico-base.jpeg'
 import rompecabezasMtematicoPiezas from './assets/rompecabezas-matematico-piezas.jpeg'
+import dinoEquilibrio from './assets/dino-equilibrio.png'
+import dinoEquilibrioJungla from './assets/dino-equilibrio-jungla.png'
+import dinoEquilibrioMano from './assets/dino-equilibrio-mano.png'
 
 
 
@@ -534,6 +537,15 @@ function App() {
       descripcion: "Base de 14,5 x 14,5 cm con 20 piezas con los numeros del 1 al 10 para armar combinaciones y aprender a sumar",
       categoria: "Juegos educativos",
       imagenes: [ rompecabezasMatematico, rompecabezasMtematicoPiezas, rompecbezasMatematicoBase]
+
+    },
+     {
+      id: 51,
+      nombre: "Dino Equilibrio",
+      precio: "15000",
+      descripcion: "Plataforma de 17,5 cm más 20 piezas con forma de dinosaurios",
+      categoria: "Juegos didacticos",
+      imagenes: [ dinoEquilibrio, dinoEquilibrioJungla, dinoEquilibrioMano]
 
     }
 
