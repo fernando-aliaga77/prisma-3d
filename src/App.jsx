@@ -71,6 +71,7 @@ import dinoEquilibrio from './assets/dino-equilibrio.png'
 import dinoEquilibrioJungla from './assets/dino-equilibrio-jungla.png'
 import dinoEquilibrioMano from './assets/dino-equilibrio-mano.png'
 import geniusSquareInfo from './assets/genius-square-info.png'
+import geniusSquarereglas from './assets/genius-square-reglas.jpeg'
 
 
 
@@ -116,7 +117,7 @@ function App() {
       precio: "30000",
       descripcion: "Juego ludico con piezas tipo teris",
       categoria: "Juegos didacticos",
-      imagenes: [ geniusSquareInfo, geniusSquare ] 
+      imagenes: [ geniusSquareInfo, geniusSquare, geniusSquarereglas ] 
     },
     {
       id: 4,
