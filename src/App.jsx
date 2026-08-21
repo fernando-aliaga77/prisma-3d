@@ -70,6 +70,7 @@ import rompecabezasMtematicoPiezas from './assets/rompecabezas-matematico-piezas
 import dinoEquilibrio from './assets/dino-equilibrio.png'
 import dinoEquilibrioJungla from './assets/dino-equilibrio-jungla.png'
 import dinoEquilibrioMano from './assets/dino-equilibrio-mano.png'
+import geniusSquareInfo from './assets/genius-square-info.png'
 
 
 
@@ -113,9 +114,9 @@ function App() {
       id: 3,
       nombre: "Genius Square",
       precio: "30000",
-      descripcion: "Juego ludico con piezas tipo tetris dados y un tablero",
+      descripcion: "Juego ludico con piezas tipo teris",
       categoria: "Juegos didacticos",
-      imagen: [ geniusSquare ] 
+      imagenes: [ geniusSquareInfo, geniusSquare ] 
     },
     {
       id: 4,
