@@ -72,6 +72,10 @@ import dinoEquilibrioJungla from './assets/dino-equilibrio-jungla.png'
 import dinoEquilibrioMano from './assets/dino-equilibrio-mano.png'
 import geniusSquareInfo from './assets/genius-square-info.png'
 import geniusSquarereglas from './assets/genius-square-reglas.jpeg'
+import calendarioLapicero from './assets/calendario-lapicero.jpeg'
+import soporteCorazon from './assets/soporte-corazon.jpeg'
+import soporteCoraones from './assets/soporte-corazones.jpeg'
+import reglaEspaciadora from './assets/regla-espaciadora.jpeg'
 
 
 
@@ -538,7 +542,7 @@ function App() {
       precio: "15000",
       descripcion: "Base de 14,5 x 14,5 cm con 20 piezas con los numeros del 1 al 10 para armar combinaciones y aprender a sumar",
       categoria: "Juegos educativos",
-      imagenes: [ rompecabezasMatematico, rompecabezasMtematicoPiezas, rompecbezasMatematicoBase]
+      imagenes: [ rompecabezasMatematico, rompecabezasMtematicoPiezas, rompecbezasMatematicoBase ]
 
     },
      {
@@ -547,10 +551,33 @@ function App() {
       precio: "15000",
       descripcion: "Plataforma de 17,5 cm más 20 piezas con forma de dinosaurios",
       categoria: "Juegos didacticos",
-      imagenes: [ dinoEquilibrio, dinoEquilibrioJungla, dinoEquilibrioMano]
+      imagenes: [ dinoEquilibrio, dinoEquilibrioJungla, dinoEquilibrioMano ]
+
+    },
+     {
+      id: 53,
+      nombre: "Soporte celular",
+      precio: "5000",
+      descripcion: "Soporte para celulares universal con forma de corzó",
+      categoria: "Accesorios de tecnologia",
+      imagenes: [ soporteCorazon, soporteCoraones ]
+
+    },
+      {
+      id: 54,
+      nombre: "Reglit espaciadora",
+      precio: "1000",
+      descripcion: "Reglita de 10cm x 4,5cm para separar las palabras en una oración",
+      categoria: "Articulos escolares",
+      imagenes: [ reglaEspaciadora ]
 
     }
+     
+     
 
+
+
+      
   ]
  
   // 4. Filtrar los productos según la categoría que toque el usuario
