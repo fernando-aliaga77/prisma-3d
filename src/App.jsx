@@ -604,12 +604,14 @@ function App() {
           <span>⚡ Souvenirs para Eventos</span>
           <span>🎨 Diseños a Pedido</span>
           <span>🚀 Souveniers Escolares</span>
-          <span>🎁 Personalizacion para eventos y fiestas</span>
+          <span>🎁 Figuras en 3D</span>
           <span>✨ Llaveros Personalizados</span>
           <span>⚡ Souvenirs para Eventos</span>
           <span>🎨 Diseños a Pedido</span>
           <span>🚀 Juegos Educaticos Personalizados</span>
-          <span>🎁 Regalos Empresariales</span>
+          <span>🎁 Juegos Pedagógicos</span>
+          <span>🎁 Atículos de bazar y decorativos perzonalizados</span>
+          
         </div>
       </div>
 
