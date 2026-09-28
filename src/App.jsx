@@ -76,7 +76,9 @@ import calendarioLapicero from './assets/calendario-lapicero.jpeg'
 import soporteCorazon from './assets/soporte-corazon.jpeg'
 import soporteCoraones from './assets/soporte-corazones.jpeg'
 import reglaEspaciadora from './assets/regla-espaciadora.jpeg'
-
+import soporteCelularElevado from './assets/soporte-celular-elevado.jpeg'
+import soporteCelularCostado from './assets/soporte-celular-elevado-costado.jpeg'
+import soporteCelularFrente from './assets/soporte-celular-elevado-frente.jpeg'
 
 
 function App() {
@@ -565,13 +567,24 @@ function App() {
     },
       {
       id: 54,
-      nombre: "Reglit espaciadora",
+      nombre: "Reglita espaciadora",
       precio: "1000",
       descripcion: "Reglita de 10cm x 4,5cm para separar las palabras en una oración",
       categoria: "Articulos escolares",
       imagenes: [ reglaEspaciadora ]
 
+    },
+     {
+      id: 55,
+      nombre: "Soportepaa celular elevado",
+      precio: "6500",
+      descripcion: "Soporte de 16 cm de alto con hueco para enchufar el cargador",
+      categoria: "Accesorios de tecnologia",
+      imagenes: [ soporteCelularElevado, soporteCelularCostado, soporteCelularFrente ]
+
     }
+     
+     
      
      
 
