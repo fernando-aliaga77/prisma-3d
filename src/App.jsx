@@ -79,7 +79,14 @@ import reglaEspaciadora from './assets/regla-espaciadora.jpeg'
 import soporteCelularElevado from './assets/soporte-celular-elevado.jpeg'
 import soporteCelularCostado from './assets/soporte-celular-elevado-costado.jpeg'
 import soporteCelularFrente from './assets/soporte-celular-elevado-frente.jpeg'
-
+import lapiceroNube from './assets/lapicero-nube.jpeg'
+import lapiceroNubeDos from './assets/lapicero-nube-dos.jpeg'
+import reglaSeparadora from './assets/regla-separadora.jpeg'
+import tiburonPecera from './assets/tiburon-pecera.jpeg'
+import tiburonPeceraDos from './assets/tiburon-pecera-dos.jpeg'
+import tiburonPlaca from './assets/tiburon-placa.jpeg'
+import topperPerzonalizado from './assets/topper-torta-perzonalizado.jpeg'
+import topperMarvel from './assets/topper-marvel.jpeg'
 
 function App() {
   // 1. Estado para saber qué categoría seleccionó el usuario (empieza en "Todos")
@@ -91,7 +98,7 @@ function App() {
     'Juegos didacticos',
     'Juegos educativos',
     'Llaveros',
-    'Articulos de bazar',
+    'Articulos de bazar y decoracion',
     'Figuras 3d',
     'Accesorios de tecnologia',
     'Arcanos',
@@ -130,7 +137,7 @@ function App() {
       nombre: "Alien porta incienso",
       precio: "12000",
       descripcion: "Divertido Porta incienso alien fumando ",
-      categoria: "Articulos de bazar",
+      categoria: "Articulos de bazar y decoracion",
       imagen: [ portaIncienzoAlien ]
     }, 
     {
@@ -192,7 +199,7 @@ function App() {
       nombre: "Lapicero Capibara",
       precio: "6000",
       descripcion: "Lapicero con divertida forma de capibara",
-      categoria: "Aticulos de bazar",
+      categoria: "Aticulos de bazar y decoracion",
       imagen: [ lapiceroCapibara ]
 
     },
@@ -210,7 +217,7 @@ function App() {
       nombre: "Maceta Pulpito",
       precio: "3800",
       descripcion: "Masetita-porta objetos con forma de pulpito para escritorio",
-      categoria: "Articulos de bazar",
+      categoria: "Articulos de bazar y decoracion",
       imagen: [ masetaPulpito ]
 
     },
@@ -237,7 +244,7 @@ function App() {
       nombre: "Porta incienso Mono",
       precio: "14000",
       descripcion: "Porta incienso con forma de mono sentado fumando",
-      categoria: "Articulos de bazar",
+      categoria: "Articulos de bazar y decoracion",
       imagen: [ portaInciensoMono ]
 
     },
@@ -246,7 +253,7 @@ function App() {
       nombre: "Porta incienso Geisha",
       precio: "14000",
       descripcion: "porta incienso geisha sentada",
-      categoria: "Articulos de bazar",
+      categoria: "Articulos de bazar y decoracion",
       imagen: [ portainciensoGeisha ]
 
     },
@@ -345,7 +352,7 @@ function App() {
       nombre: "Porta incienso El Pescador Oriental",
       precio: "4800",
       descripcion: "Porta incienso de 33 cm de largo varios colores",
-      categoria: "Articulos de bazar",
+      categoria: "Articulos de bazar y decoracion",
       imagen: [ portaInciensoCanoa ]
 
     },
@@ -354,7 +361,7 @@ function App() {
       nombre: "Organizador de cosméticos con cajón",
       precio: "28600",
       descripcion: "Organizador de 1 cm de alto y 20cmx15cm de base ",
-      categoria: "Articulos de bazar",
+      categoria: "Articulos de bazar y decoracion",
       imagen: [ organizadorCosmeticos ]
 
     },
@@ -453,7 +460,7 @@ function App() {
       nombre: "Macetita Lectura",
       precio: "3800",
       descripcion: "Macetita y porta objetos para esritorio y/o decoración",
-      categoria: "Articulos de bazar",
+      categoria: "Articulos de bazar y decoracion",
       imagen: [ macetitaLibro ]
 
     },
@@ -582,15 +589,53 @@ function App() {
       categoria: "Accesorios de tecnologia",
       imagenes: [ soporteCelularElevado, soporteCelularCostado, soporteCelularFrente ]
 
+    },
+      {
+      id: 56,
+      nombre: "Nube porta fibras y lapices",
+      precio: "12000",
+      descripcion: "Ideal para organizar y decorar tu escritorio",
+      categoria: "Articulos de bazar y decoracion",
+      imagenes: [ lapiceroNube, lapiceroNubeDos ]
+
+    }, {
+      id: 57,
+      nombre: "Regla separadora",
+      precio: "4500",
+      descripcion: "Regla separadora de 20 cm x 4,5 cm con abecedario para ayuda de lectura",
+      categoria: "Articulos escolares",
+      imagenes: [ reglaSeparadora ]
+
+    },
+     {
+      id: 58,
+      nombre: "Tiburon para pecera",
+      precio: "4800",
+      descripcion: "Tiburon de 20 cm de largo x 10 cm alto ideal para decoracion de peceras ",
+      categoria: "Articulos de bazar y decoracion",
+      imagenes: [ tiburonPecera, tiburonPeceraDos, tiburonPlaca ]
+
+    },
+     {
+      id: 59,
+      nombre: "Topper de tora perzonalizado",
+      precio: "4500",
+      descripcion: "Topper de torta perzonalizado con tematica  nombre",
+      categoria: "Perzonalizacion de fiestas y eventos",
+      imagenes: [ topperPerzonalizado ]
+
+    },
+ {
+      id: 60,
+      nombre: "Toppr de torta Heroes de Marvel",
+      precio: "4000",
+      descripcion: "Toppers con tus personajes favoritos",
+      categoria: "Perzonalizacion de fiestas y eventos",
+      imagenes: [ topperMarvel ]
+
     }
-     
-     
-     
-     
 
-
-
-      
+     
   ]
  
   // 4. Filtrar los productos según la categoría que toque el usuario
