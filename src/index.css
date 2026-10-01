@@ -194,29 +194,26 @@ body {
   .sidebar-categorias {
     width: auto;
     padding: 15px;
-    position: relative; 
-    overflow: visible !important; 
+    position: relative;
   }
 
   .titulo-sidebar {
     text-align: center;
     font-size: 16px;
-    margin-bottom: 12px;
+    margin-bottom: 2px; 
   }
 
-  /* Posicionamos la flecha con mayor jerarquía solo en celular */
-  .sidebar-categorias::after {
-    content: "➡️";
-    position: absolute;
-    right: 8px; 
-    bottom: 22px; 
-    font-size: 16px;
-    z-index: 100; 
-    pointer-events: none; 
-    animation: parpadeoSutil 1.8s ease-in-out infinite; 
-    background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
-    padding: 4px;
-    border-radius: 50%;
+  /* EXCLUSIVO CELULAR: La leyenda solo se genera si la pantalla es chica */
+  .titulo-sidebar::after {
+    content: "(Desliza para ver más ➡️)";
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: #8c8275; 
+    margin-top: 4px;
+    margin-bottom: 12px;
+    animation: parpadeoSutilTexto 2s ease-in-out infinite; 
   }
 
   /* Convertimos la lista vertical en una fila horizontal con scroll táctil */
@@ -227,7 +224,6 @@ body {
     white-space: nowrap;
     padding-bottom: 8px;
     gap: 8px;
-    padding-right: 40px; 
     -webkit-overflow-scrolling: touch;
   }
   
@@ -260,23 +256,17 @@ body {
   .grilla-productos {
     padding: 0;
   }
-} /* <--- AQUÍ SE CIERRA CORRECTAMENTE EL BLOQUE MÓVIL */
+} /* <--- AQUÍ SE CERRÓ EL BLOQUE MÓVIL CORRECTAMENTE */
 
 
 /* ==========================================================================
    ANIMACIONES Y COMPONENTES GLOBALES (Funcionan en Computadora y Celular)
    ========================================================================== */
 
-/* Animación de la flecha móvil */
-@keyframes parpadeoSutil {
-  0%, 100% { 
-    opacity: 0.4; 
-    transform: scale(0.95) translateX(0); 
-  }
-  50% { 
-    opacity: 1; 
-    transform: scale(1.05) translateX(3px); 
-  }
+/* Animación de parpadeo para el texto del celular */
+@keyframes parpadeoSutilTexto {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
 }
 
 /* Contenedor de la barra corrediza con efecto de luz metalizada */
