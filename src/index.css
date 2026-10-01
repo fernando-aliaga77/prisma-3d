@@ -179,7 +179,6 @@ body {
   margin-top: 40px;
 }
 
-
 /* ==========================================================================
    MÓVIL EN PRIMER LUGAR: Reglas exclusivas para pantallas chicas (Celulares)
    ========================================================================== */
@@ -195,7 +194,8 @@ body {
   .sidebar-categorias {
     width: auto;
     padding: 15px;
-    position: relative; /* NUEVO: Necesario para posicionar la flecha adentro */
+    position: relative; 
+    overflow: visible !important; 
   }
 
   .titulo-sidebar {
@@ -204,34 +204,37 @@ body {
     margin-bottom: 12px;
   }
 
-  /* NUEVO: Creamos la flecha indicadora parpadeante a la derecha del contenedor */
+  /* Posicionamos la flecha con mayor jerarquía solo en celular */
   .sidebar-categorias::after {
     content: "➡️";
     position: absolute;
-    right: 15px;
-    bottom: 20px; /* La ubica a la altura de los botones */
-    font-size: 14px;
-    background: linear-gradient(to left, #ffffff 70%, rgba(255, 255, 255, 0));
-    padding-left: 20px;
-    pointer-events: none; /* Permite que el usuario pueda hacer clic "a través" de la flecha */
-    animation: parpadeoSutil 2s infinite; /* Aplica el efecto de respiración/parpadeo */
+    right: 8px; 
+    bottom: 22px; 
+    font-size: 16px;
+    z-index: 100; 
+    pointer-events: none; 
+    animation: parpadeoSutil 1.8s ease-in-out infinite; 
+    background: radial-gradient(circle, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
+    padding: 4px;
+    border-radius: 50%;
   }
 
   /* Convertimos la lista vertical en una fila horizontal con scroll táctil */
   .lista-sidebar {
-    display: flex; /* ASEGURADO */
-    flex-direction: row;
-    overflow-x: auto; /* Permite deslizar con el dedo de izquierda a derecha */
+    display: flex !important; 
+    flex-direction: row !important;
+    overflow-x: auto !important; 
     white-space: nowrap;
     padding-bottom: 8px;
-    gap: 6px;
-    padding-right: 35px; /* NUEVO: Margen extra al final para que la flecha no tape el último botón */
-    
-    /* Oculta la barra de scroll tosca de Windows en celulares para que se vea limpio */
+    gap: 8px;
+    padding-right: 40px; 
     -webkit-overflow-scrolling: touch;
   }
+  
   .lista-sidebar::-webkit-scrollbar {
-    display: none;
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
   }
 
   /* Ajustamos los botones de categorías para el formato horizontal */
@@ -240,11 +243,11 @@ body {
     display: inline-block;
     padding: 8px 14px;
     font-size: 13px;
-    background-color: #f7f5f0; /* Un fondo sutil para que parezcan pastillas/tags */
+    background-color: #f7f5f0; 
   }
 
   .btn-categoria:hover {
-    padding-left: 14px; /* Desactivamos el efecto de empuje lateral en celular */
+    padding-left: 14px; 
     background-color: #f0f7ff;
   }
 
@@ -257,10 +260,66 @@ body {
   .grilla-productos {
     padding: 0;
   }
+} /* <--- AQUÍ SE CIERRA CORRECTAMENTE EL BLOQUE MÓVIL */
+
+
+/* ==========================================================================
+   ANIMACIONES Y COMPONENTES GLOBALES (Funcionan en Computadora y Celular)
+   ========================================================================== */
+
+/* Animación de la flecha móvil */
+@keyframes parpadeoSutil {
+  0%, 100% { 
+    opacity: 0.4; 
+    transform: scale(0.95) translateX(0); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: scale(1.05) translateX(3px); 
+  }
 }
 
-/* NUEVA ANIMACIÓN: Hace que la flecha aparezca y desaparezca suavemente */
-@keyframes parpadeoSutil {
-  0%, 100% { opacity: 0.3; transform: translateX(0); }
-  50% { opacity: 1; transform: translateX(4px); } /* Se mueve un poquito a la derecha indicando avance */
+/* Contenedor de la barra corrediza con efecto de luz metalizada */
+.barra-corrediza {
+  width: 100%;
+  background-color: #5880b5; 
+  overflow: hidden;
+  padding: 10px 0;
+  display: flex;
+  position: relative;
+
+  border-top: 2px solid #5d58e5; 
+  border-bottom: 2px solid #5858e5;
+
+  box-shadow: 
+    inset 0 4px 10px rgba(255, 255, 255, 0.4),  
+    inset 0 -4px 10px rgba(0, 0, 0, 0.1),       
+    0 4px 12px rgba(229, 193, 88, 0.2);         
+}
+
+/* Contenedor interno que se va a desplazar */
+.texto-movimiento {
+  display: flex;
+  gap: 50px; 
+  padding-left: 100%; 
+  animation: correrTexto 25s linear infinite; 
+}
+
+/* Estilo para cada frase individual */
+.texto-movimiento span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff; 
+  letter-spacing: 0.5px;
+  white-space: nowrap; 
+}
+
+/* Animación mágica de CSS para desplazar el texto */
+@keyframes correrTexto {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0); 
+  }
 }
