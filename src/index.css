@@ -179,6 +179,8 @@ body {
   margin-top: 40px;
 }
 
+
+/*
 /* ==========================================================================
    MÓVIL EN PRIMER LUGAR: Reglas exclusivas para pantallas chicas (Celulares)
    ========================================================================== */
@@ -287,4 +289,91 @@ body {
     /* Se desplaza hacia la izquierda de forma exacta */
     transform: translate3d(-100%, 0, 0); 
   }
+}
+*/
+
+
+/* ==========================================================================
+   MÓVIL EN PRIMER LUGAR: Reglas exclusivas para pantallas chicas (Celulares)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Cambiamos la distribución de lado a lado a una sola columna vertical */
+  .contenedor-layout {
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+  }
+
+  /* La barra lateral ahora se estira a lo ancho arriba de los productos */
+  .sidebar-categorias {
+    width: auto;
+    padding: 15px;
+    position: relative; /* NUEVO: Necesario para posicionar la flecha adentro */
+  }
+
+  .titulo-sidebar {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  /* NUEVO: Creamos la flecha indicadora parpadeante a la derecha del contenedor */
+  .sidebar-categorias::after {
+    content: "➡️";
+    position: absolute;
+    right: 15px;
+    bottom: 20px; /* La ubica a la altura de los botones */
+    font-size: 14px;
+    background: linear-gradient(to left, #ffffff 70%, rgba(255, 255, 255, 0));
+    padding-left: 20px;
+    pointer-events: none; /* Permite que el usuario pueda hacer clic "a través" de la flecha */
+    animation: parpadeoSutil 2s infinite; /* Aplica el efecto de respiración/parpadeo */
+  }
+
+  /* Convertimos la lista vertical en una fila horizontal con scroll táctil */
+  .lista-sidebar {
+    display: flex; /* ASEGURADO */
+    flex-direction: row;
+    overflow-x: auto; /* Permite deslizar con el dedo de izquierda a derecha */
+    white-space: nowrap;
+    padding-bottom: 8px;
+    gap: 6px;
+    padding-right: 35px; /* NUEVO: Margen extra al final para que la flecha no tape el último botón */
+    
+    /* Oculta la barra de scroll tosca de Windows en celulares para que se vea limpio */
+    -webkit-overflow-scrolling: touch;
+  }
+  .lista-sidebar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Ajustamos los botones de categorías para el formato horizontal */
+  .btn-categoria {
+    width: auto;
+    display: inline-block;
+    padding: 8px 14px;
+    font-size: 13px;
+    background-color: #f7f5f0; /* Un fondo sutil para que parezcan pastillas/tags */
+  }
+
+  .btn-categoria:hover {
+    padding-left: 14px; /* Desactivamos el efecto de empuje lateral en celular */
+    background-color: #f0f7ff;
+  }
+
+  /* Aseguramos que la grilla de productos ocupe todo el ancho disponible */
+  .contenido-productos {
+    width: 100%;
+  }
+
+  /* Forzamos a que las tarjetas se adapten de forma amigable al ancho del celular */
+  .grilla-productos {
+    padding: 0;
+  }
+}
+
+/* NUEVA ANIMACIÓN: Hace que la flecha aparezca y desaparezca suavemente */
+@keyframes parpadeoSutil {
+  0%, 100% { opacity: 0.3; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(4px); } /* Se mueve un poquito a la derecha indicando avance */
 }
