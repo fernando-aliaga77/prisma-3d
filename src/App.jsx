@@ -146,7 +146,7 @@ function App() {
     {
       id: 5,
       nombre: "Silabario",
-      precio: "30000",
+      precio: "35000",
       descripcion: "Bloques de silabas ideales para armar palabras",
       categoria: "Juegos educativos",
       imagen: [silabario],

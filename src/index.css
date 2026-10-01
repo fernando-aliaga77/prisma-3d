@@ -208,9 +208,9 @@ body {
     content: "(Desliza para ver más ➡️)";
     display: block;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
-    color: #8c8275; 
+    color: #c20d25; 
     margin-top: 4px;
     margin-bottom: 12px;
     animation: parpadeoSutilTexto 2s ease-in-out infinite; 
