@@ -569,7 +569,7 @@ function App() {
     },
     {
       id: 55,
-      nombre: "Soportepaa celular elevado",
+      nombre: "Soporte para celular elevado",
       precio: "6500",
       descripcion:
         "Soporte de 16 cm de alto con hueco para enchufar el cargador",
