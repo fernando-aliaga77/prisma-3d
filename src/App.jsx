@@ -584,7 +584,7 @@ function App() {
     {
       id: 56,
       nombre: "Nube porta fibras y lapices",
-      precio: "12000",
+      precio: "9800",
       descripcion: "Ideal para organizar y decorar tu escritorio",
       categoria: "Articulos de bazar y decoracion",
       imagenes: [lapiceroNube, lapiceroNubeDos],
@@ -618,7 +618,7 @@ function App() {
     },
     {
       id: 60,
-      nombre: "Toppr de torta Heroes de Marvel",
+      nombre: "Topper de torta Heroes de Marvel",
       precio: "4000",
       descripcion: "Toppers con tus personajes favoritos",
       categoria: "Perzonalizacion de fiestas y eventos",

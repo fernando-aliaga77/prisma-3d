@@ -205,7 +205,7 @@ body {
 
   /* EXCLUSIVO CELULAR: La leyenda solo se genera si la pantalla es chica */
   .titulo-sidebar::after {
-    content: "(Desliza para ver más ➡️)";
+    content: "(Desliza para ver más ➡️ ;-)";
     display: block;
     text-align: center;
     font-size: 16px;
