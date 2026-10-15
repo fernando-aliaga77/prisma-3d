@@ -90,6 +90,11 @@ import topperMarvel from "./assets/topper-marvel.jpeg";
 import busLapicero from "./assets/bus-lapicero-fibras.jpeg";
 import busLapiceroarriba from "./assets/bus-lapicero-arriba.jpeg";
 import llaveroMargarita from "./assets/llavero-margarita.jpeg";
+import soporteCeluRosa from "./assets/soporte-celular-bambu-rosa.jpeg";
+import soporteCeluNaranja from "./assets/soporte-celular-bambu-naranja.jpeg";
+import portaCepillos from "./assets/porta-cepillos.jpg";
+import portaCepillosDos from "./assets/porta-cepillos-dos.jpg";
+import kitSensorial from "./assets/kit-sensorial.jpeg";
 
 function App() {
   // 1. Estado para saber qué categoría seleccionó el usuario (empieza en "Todos")
@@ -246,7 +251,7 @@ function App() {
     {
       id: 17,
       nombre: "Porta incienso Geisha",
-      precio: "14000",
+      precio: "8000",
       descripcion: "porta incienso geisha sentada",
       categoria: "Articulos de bazar y decoracion",
       imagen: [portainciensoGeisha],
@@ -335,7 +340,7 @@ function App() {
     {
       id: 28,
       nombre: "Porta incienso El Pescador Oriental",
-      precio: "4800",
+      precio: "3800",
       descripcion: "Porta incienso de 33 cm de largo varios colores",
       categoria: "Articulos de bazar y decoracion",
       imagen: [portaInciensoCanoa],
@@ -640,6 +645,32 @@ function App() {
       descripcion: "Llavero con nombre personalizado ideal para souveniers",
       categoria: "Llaveros",
       imagenes: [llaveroMargarita],
+    },
+    {
+      id: 63,
+      nombre: "Soporte para celular Bambu Lab",
+      precio: "3800",
+      descripcion:
+        "Soporte de 8,3 cm de alto por 7,5 cm de ancho compacto y estético (varios colores)",
+      categoria: "Accesorios de tecnologia",
+      imagenes: [soporteCeluRosa, soporteCeluNaranja],
+    },
+    {
+      id: 64,
+      nombre: "Porta cepillos de dientes y pasta dental",
+      precio: "6500",
+      descripcion: "Porta cepillos de 19 cm de largo por 10 cm de alto",
+      categoria: "Articulos de bazar y decoracion",
+      imagenes: [portaCepillos, portaCepillosDos],
+    },
+    {
+      id: 65,
+      nombre: "Set antiestres y estimulacion sensorial",
+      precio: "8500",
+      descripcion:
+        "Colorido det de cinco artículos para el estímulo sensorial y liberación de estés",
+      categoria: "Juegos didacticos",
+      imagenes: [kitSensorial],
     },
   ];
 
