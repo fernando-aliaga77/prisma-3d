@@ -719,10 +719,10 @@ function App() {
     },
     {
       id: 70,
-      nombre: "Adornos Navideñas Snoopy ",
+      nombre: "Adornos Navideños Snoopy ",
       precio: "6000",
       descripcion:
-        "Set de 10 Adornos navideñas para colorear y adornar el arbolito ",
+        "Set de 10 Adornos navideños para colorear y adornar el arbolito ",
       categoria: "Articulos de bazar y decoracion",
       imagenes: [
         snoopyEsferasNavideñas,
