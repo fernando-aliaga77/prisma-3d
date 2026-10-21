@@ -95,6 +95,18 @@ import soporteCeluNaranja from "./assets/soporte-celular-bambu-naranja.jpeg";
 import portaCepillos from "./assets/porta-cepillos.jpg";
 import portaCepillosDos from "./assets/porta-cepillos-dos.jpg";
 import kitSensorial from "./assets/kit-sensorial.jpeg";
+import tablaPitagorica from "./assets/tabla-pitagorica.jpeg";
+import llaveroHelloKittyEnojada from "./assets/llavero-hello-kitty-enojada.jpeg";
+import llaveroSnoopyYlucy from "./assets/llavero-snoopy-lucy.jpeg";
+import llaveroHelloKittyCara from "./assets/llavero-hello-kitty-cara.jpeg";
+import snoopyEsferasNavideñas from "./assets/snoopy-esferas-navideñas.jpeg";
+import esferaNavideñaSnoopyCama from "./assets/esfera-navideña-snoopy-cama.jpeg";
+import esferaNavideñaSnoopyCasa from "./assets/esfera-navideña-snoopy-casa.jpeg";
+import esferaNavideñaSnoopyPapaNoel from "./assets/esfera-navideña-snoopy-papanoel.jpeg";
+import esferaNavideñaSnoopyRegaloPintada from "./assets/esfera-navideña-snoopy-regalo-pintada.jpeg";
+import esferaNavideñaSnoopyRegalo from "./assets/esfera-navideña-snoopy-regalo.jpeg";
+import esferaNavideñaSnoopyTrineo from "./assets/esfera-navideña-snoopy-trineo.jpeg";
+import llaveroHomero from "./assets/llavero-homero.jpeg";
 
 function App() {
   // 1. Estado para saber qué categoría seleccionó el usuario (empieza en "Todos")
@@ -210,7 +222,7 @@ function App() {
     {
       id: 12,
       nombre: "Llavero Roblox",
-      precio: "1500",
+      precio: "2000",
       descripcion: "Llavero Roblox monocromático",
       categoria: "Llaveros",
       imagen: [llaveroRoblox],
@@ -615,7 +627,7 @@ function App() {
     },
     {
       id: 59,
-      nombre: "Topper de tora perzonalizado",
+      nombre: "Topper de torta perzonalizado",
       precio: "4500",
       descripcion: "Topper de torta perzonalizado con tematica  nombre",
       categoria: "Perzonalizacion de fiestas y eventos",
@@ -671,6 +683,64 @@ function App() {
         "Colorido det de cinco artículos para el estímulo sensorial y liberación de estés",
       categoria: "Juegos didacticos",
       imagenes: [kitSensorial],
+    },
+    {
+      id: 66,
+      nombre: "Tabla Pitagórica",
+      precio: "8000",
+      descripcion: "Tabla de 14,3 cm x 14,3 cm para aprender a multiplicar",
+      categoria: "Juegos educativos",
+      imagenes: [tablaPitagorica],
+    },
+    {
+      id: 67,
+      nombre: "Hello Kitty enojada",
+      precio: "2000",
+      descripcion: "Llavero de Hello Kitty",
+      categoria: "Llaveros",
+      imagenes: [llaveroHelloKittyEnojada],
+    },
+
+    {
+      id: 68,
+      nombre: "Snoopy y Lucy",
+      precio: "2000",
+      descripcion: "Llavero de Snoopy y Lucy abrazados",
+      categoria: "Llaveros",
+      imagenes: [llaveroSnoopyYlucy],
+    },
+    {
+      id: 69,
+      nombre: "Carita de Hello Kitty",
+      precio: "2000",
+      descripcion: "Llavero de Hello Kitty",
+      categoria: "Llaveros",
+      imagenes: [llaveroHelloKittyCara],
+    },
+    {
+      id: 70,
+      nombre: "Esferas Navideñas Snoopy ",
+      precio: "6000",
+      descripcion:
+        "Set de 10 esferas navideñas para colorear y adornar el arbolito ",
+      categoria: "Articulos de bazar y decoracion",
+      imagenes: [
+        snoopyEsferasNavideñas,
+        esferaNavideñaSnoopyCama,
+        esferaNavideñaSnoopyCasa,
+        esferaNavideñaSnoopyPapaNoel,
+        esferaNavideñaSnoopyRegalo,
+        esferaNavideñaSnoopyRegaloPintada,
+        esferaNavideñaSnoopyTrineo,
+      ],
+    },
+    {
+      id: 71,
+      nombre: "Homero Duff",
+      precio: "2000",
+      descripcion: "Llavero de Homero brindando",
+      categoria: "Llaveros",
+      imagenes: [llaveroHomero],
     },
   ];
 
