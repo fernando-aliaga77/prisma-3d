@@ -368,7 +368,7 @@ function App() {
     {
       id: 30,
       nombre: "Soporte celular/Llavero",
-      precio: "2500",
+      precio: "3000",
       descripcion: "Soporte tipo llavero varios colores ",
       categoria: "Accesorios de tecnologia",
       imagen: [soporteCelularLlavero],
@@ -755,6 +755,7 @@ function App() {
       {/* Encabezado */}
       <header className="header-prisma">
         <div className="logo-contenedor">
+          <span className="gorrito-navideno">🎅🏼</span>
           <img src={logoPrisma} alt="Logo Prisma 3D" className="logo-img" />
         </div>
         <h1 className="titulo-prisma">
